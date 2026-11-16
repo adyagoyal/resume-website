@@ -1,0 +1,90 @@
+body {
+  background-color: #f8eadc;
+  color: #09251c;
+  font-family: "Courier New", Courier, monospace;
+  margin: 40px;
+}
+h1 {
+  color: #09251c;
+  font-size: 40px;
+  text-align: center;
+  background-color: #f8eadc;
+  font-family: "Libre Baskerville";
+}
+
+h2 {
+  color: #09251c;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-family: "Libre Baskerville";
+}
+
+h3 {
+  color: #444444;
+  font-size: 20px;
+  font-family: "Libre Baskerville";
+}
+
+p,
+li {
+  color: #444444;
+  font-size: 21px;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid #a55704;
+}
+
+.container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+img.profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #fff6ec;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(40, 4, 4, 0.5);
+}
+
+nav {
+  background-color: #09251c;
+  display: flex;
+  gap: 60px;
+  padding: 10px;
+  text-decoration: none;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  font-family: "Libre Baskerville";
+}
+
+nav a {
+  color: #f8eadc;
+}
