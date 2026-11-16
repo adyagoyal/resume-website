@@ -44,10 +44,19 @@ hr {
   max-width: 1100px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px)  {
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  
   }
+  body {margin: 15px;}
+  h1 {font-size: 26px;}
+  h2 {font-size: 22px;}
+  h3 {font-size: 18px;}
+  p, li {font-size: 16px;}
+  .header {flex-direction: column;}
+  nav {flex-wrap: wrap;}
+  nav {gap: 15px;}
 }
 .header {
   display: flex;
@@ -75,7 +84,7 @@ img.profile {
 nav {
   background-color: #09251c;
   display: flex;
-  gap: 60px;
+  gap: 15px;
   padding: 10px;
   text-decoration: none;
   justify-content: center;
@@ -83,6 +92,7 @@ nav {
   top: 0;
   text-align: center;
   font-family: "Libre Baskerville";
+  flex-wrap: wrap;
 }
 
 nav a {
